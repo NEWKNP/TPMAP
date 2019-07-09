@@ -17,7 +17,7 @@ ______________________________________________________
 
 **[Demo](http://203.185.67.245/tpmap/v2.1/)**
 
-*This source code for study only
-*Year 2559, 2560 is not available for license task
+*This source code for study only.
+*Year 2559, 2560 is not available for license task.
 
 full version of TPMAP and it is available now.
