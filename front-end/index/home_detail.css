@@ -1,0 +1,12 @@
+.copyright {
+    float: right;
+    font-size: 1.4rem;
+    /*bottom: 1%;
+    right: 2%;*/
+}
+.ban-text {
+    color: #455396;
+    text-align: left;
+    padding-left: 1rem;
+    float: left;
+}

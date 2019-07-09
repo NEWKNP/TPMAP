@@ -1,0 +1,208 @@
+/* Extra small devices (portrait phones, less than 576px)
+   No media query since this is the default in Bootstrap */
+html {
+    font-size: 1.1rem;
+}
+.container-fluid {
+    height: 75rem;
+}
+.header_height {
+    /*height: 9%;*/
+    height: 7rem;
+}
+.main_height {
+    /*height: 89%;*/
+    height: 68rem;
+}
+.legend_height {
+    /*height: 89%;*/
+    height: 4rem;
+}
+.site-logo img {
+    margin-top: 2rem;
+    max-height: 4rem;
+}
+.ban_text {
+    font-size: 2rem;
+    line-height: 3.5;
+}
+.layerL {
+    width: 60%;
+}
+.font_legend {
+    font-size: 2rem;
+    padding: 0 2rem;
+}
+.col_head {
+    font-size: 2.3rem;
+    text-align: end;
+}
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    html {
+        font-size: 1.1rem;
+    }
+    .site-logo img {
+        margin-top: 1rem;
+        max-height: 2rem;
+    }
+    .ban_text {
+        line-height: 3.2;
+        font-size: 1.25rem;
+    }
+    .layerL {
+        width: 90%;
+    }
+    .font_legend {
+        font-size: 1rem;
+        padding: 0 2rem;
+    }
+    .header_height {
+        /*height: 5.5%;*/
+        height: 5rem;
+    }
+    .main_height {
+        /*height: 94%;*/
+        height: 63rem;
+    }
+    .col_head {
+        font-size: 1.5rem;
+        text-align: end;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    html {
+        font-size: 1.2rem;
+    }
+    .site-logo img {
+        margin-top: .8rem;
+        max-height: 2.5rem;
+    }
+    .ban_text {
+        font-size: 1.5rem;
+        line-height: 2.6;
+    }
+    .layerL {
+        width: 80%;
+    }
+    .font_legend {
+        font-size: 1.2rem;
+        padding: 0 2rem;
+    }
+    .header_height {
+        /*height: 5.5%;*/
+        height: 5rem;
+    }
+    .main_height {
+        /*height: 94%;*/
+        height: 65rem;
+    }
+    .col_head {
+        font-size: 1.6rem;
+        text-align: end;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    html {
+        font-size: 1.4rem;
+    }
+    .site-logo img {
+        margin-top: 1.4rem;
+        max-height: 3rem;
+    }
+    .ban_text {
+        font-size: 2rem;
+        line-height: 3;
+    }
+    .layerL {
+        width: 75%;
+    }
+    .font_legend {
+        font-size: 1.4rem;
+        padding: 0 2rem;
+    }
+    .header_height {
+        /*height: 9%;*/
+        height: 7rem;
+    }
+    .main_height {
+        /*height: 89%;*/
+        height: 68rem;
+    }
+    .col_head {
+        font-size: 2.1rem;
+        text-align: end;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    html {
+        font-size: 1.5rem;
+    }
+    .site-logo img {
+        margin-top: 2rem;
+        max-height: 4rem;
+    }
+    .ban_text {
+        font-size: 2rem;
+        line-height: 3.5;
+    }
+    .layerL {
+        width: 65%;
+    }
+    .font_legend {
+        font-size: 1.4rem;
+        padding: 0 2rem;
+    }
+    .header_height {
+        /*height: 9%;*/
+        height: 7rem;
+    }
+    .main_height {
+        /*height: 90%;*/
+        height: 68rem;
+    }
+    .col_head {
+        font-size: 1.6rem;
+        text-align: end;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    html {
+        font-size: 2rem;
+    }
+    .site-logo img {
+        margin-top: 2rem;
+        max-height: 4rem;
+    }
+    .ban_text {
+        font-size: 2rem;
+        line-height: 3.5;
+    }
+    .layerL {
+        width: 60%;
+    }
+    .font_legend {
+        font-size: 1.9rem;
+        padding: 0 2rem;
+    }
+    .header_height {
+        /*height: 9%;*/
+        height: 7rem;
+    }
+    .main_height {
+        /*height: 89%;*/
+        height: 68rem;
+    }
+    .col_head {
+        font-size: 2.1rem;
+        text-align: end;
+    }
+}

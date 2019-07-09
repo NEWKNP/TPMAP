@@ -1,0 +1,11 @@
+.year_text{
+    text-align: center;
+    color: dimgray;
+}
+.text_middle:hover {
+    opacity: .6;
+    cursor: pointer;
+}
+.unrelease {
+    cursor: no-drop;
+}

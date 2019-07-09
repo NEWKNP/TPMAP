@@ -1,0 +1,21 @@
+.shade_rect {
+    width: 100%;
+    height: 100%;
+}
+/*
+.svg-shading {
+    width: 100%;
+}
+*/
+.shade_col_left {}
+.shade_col_right {
+    float: right;
+}
+td.caption {
+    fill: #000;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+.no-drop {
+    font-size: 1.1rem;
+}

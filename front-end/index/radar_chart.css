@@ -1,0 +1,63 @@
+.position {
+    position: absolute;
+}
+.bar_row1 {
+    font-size: 1vw;
+    color: #455396;
+}
+.bar_row2 {
+    font-size: 1vw;
+}
+.bar_row3 {
+    font-size: 1.2vw;
+}
+.bar_row4 {
+    font-size: 1.8vw;
+}
+.bar_col1 {
+    text-align: left;
+}
+.bar_col2 {
+    text-align: center;
+}
+.bar_col3 {
+    text-align: right;
+}
+td#province-text {
+    /*font-size: 2vw;*/
+}
+td#district-text {}
+td#tumbon-text {}
+td#province-value {}
+td#district-value {}
+td#tumbon-value {}
+td#rate-text {}
+td#poor-text {}
+td#rate-value {}
+td#poor-value {}
+button.more-text{
+    font-size: 1.9vw;
+    color: white;
+    background-color: #455396;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    display: block;
+    margin: 1rem auto;
+}
+button.more-text:hover {
+    opacity: .4;
+}
+.svg-bar {
+    display: block;
+    margin: auto;
+}
+#radar{
+    position: relative;
+    z-index: 1;
+}
+#big-radar{
+    position: relative;
+    z-index: 1;
+    font-size: 2rem;
+}

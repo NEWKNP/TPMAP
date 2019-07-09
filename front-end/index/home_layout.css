@@ -1,0 +1,94 @@
+* {
+    /*display: block;*/
+    font-family: "Kanit";
+    box-sizing: border-box;
+}
+.header {
+    background-color: #f9f9f9;
+    font-size: 1rem;
+    box-shadow: 4px 0 8px rgba(33, 33, 33, 0.2);
+}
+.main {
+    background-color: #eeeeee;
+}
+.home {
+    width: 96.5%;
+    margin: 0 auto;
+}
+.home:hover {
+    opacity: .6;
+    cursor: pointer;
+}
+/*
+.outer_content {
+    height: 90%;
+    background-color: #eeeeee;
+}
+.front{
+    position: absolute;
+    width: 100%;
+    height: inherit;
+}
+.back{
+    position: absolute;
+    width: 100%;
+    height: inherit;
+    z-index: 1;
+}
+*/
+.tab {
+    height: 40rem;
+    margin-top: 2rem;
+    background-color: white;
+    box-shadow: 0 0 5px grey;
+}
+.bar_content {
+    margin-top: 2rem;
+    height: 48rem;
+    background-color: white;
+    box-shadow: 0 0 5px grey;
+}
+.shade {
+    /*width: 25%;
+    height: 15%;
+    top: 78%;
+    right: 2%;*/
+    margin-top: 3rem;
+    height: 10rem;
+    background-color: white;
+    box-shadow: 0 0 5px grey;
+}
+.previous {
+    /*width: 2%;
+    height: 4.525%;
+    top: 2.5%;
+    left: 19%;*/
+    width: 3rem;
+    height: 3rem;
+    margin-top: 2rem;
+    background-color: white;
+    box-shadow: 0 0 5px grey;
+    font-size: 2rem;
+    text-align: center;
+    cursor: pointer;
+    color: #a3a3a3;
+}
+.svg-map {
+    margin: auto 0;
+}
+.year_content {
+    margin: auto;
+}
+.logo {
+    float: left;
+    max-width: 100%;
+}
+.icon {
+    font-size: 2.8rem;
+}
+.icon2 {
+    font-size: 4rem;
+}
+.footer {
+    background-color: #eeeeee;
+}

@@ -1,0 +1,235 @@
+/* Extra small devices (portrait phones, less than 576px)
+   No media query since this is the default in Bootstrap */
+html {
+    font-size: 1.1rem;
+}
+.container-fluid {
+    height: 75rem;
+}
+.header_height {
+    /*height: 9%;*/
+    height: 7rem;
+}
+.main_height {
+    /*height: 89%;*/
+    height: 63rem;
+}
+.footer_height {
+    /*height: 2%;*/
+    height: 4rem;
+}
+.site-logo img {
+    margin-top: 2rem;
+    max-height: 4rem;
+}
+.ban_text {
+    font-size: 2rem;
+    line-height: 3.5;
+}
+.year_width {
+    width: 80rem;
+}
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    html {
+        font-size: 1.1rem;
+    }
+    .main_hide {
+        display: none;
+    }
+    .tab_switch {
+        display: flex;
+    }
+    .site-logo img {
+        margin-top: 1rem;
+        max-height: 2rem;
+    }
+    .ban_text {
+        line-height: 3.2;
+        font-size: 1.25rem;
+    }
+    .shade_col {
+        font-size: 1.5rem;
+    }
+    .text_middle {
+        font-size: 1.2rem;
+    }
+    .header_height {
+        /*height: 5.5%;*/
+        height: 5rem;
+    }
+    .main_height {
+        /*height: 94%;*/
+        height: 66rem;
+    }
+    .footer_height {
+        /*height: .5%;*/
+        height: 4rem;
+    }
+    .year_width {
+        width: 30rem;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    html {
+        font-size: 1.2rem;
+    }
+    .main_hide {
+        display: none;
+    }
+    .tab_switch {
+        display: flex;
+    }
+    .site-logo img {
+        margin-top: .8rem;
+        max-height: 2.5rem;
+    }
+    .ban_text {
+        font-size: 1.5rem;
+        line-height: 2.6;
+    }
+    .shade_col {
+        font-size: 1.5rem;
+    }
+    .text_middle {
+        font-size: 1.2rem;
+    }
+    .header_height {
+        /*height: 5.5%;*/
+        height: 5rem;
+    }
+    .main_height {
+        /*height: 94%;*/
+        height: 66rem;
+    }
+    .footer_height {
+        /*height: .5%;*/
+        height: 4rem;
+    }
+    .year_width {
+        width: 39rem;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    html {
+        font-size: 1.4rem;
+    }
+    .main_hide {
+        display: none;
+    }
+    .tab_switch {
+        display: flex;
+    }
+    .site-logo img {
+        margin-top: 1.4rem;
+        max-height: 3rem;
+    }
+    .ban_text {
+        font-size: 2rem;
+        line-height: 3;
+    }
+    .shade_col {
+        font-size: 1rem;
+    }
+    .text_middle {
+        font-size: 1rem;
+    }
+    .header_height {
+        /*height: 9%;*/
+        height: 7rem;
+    }
+    .main_height {
+        /*height: 89%;*/
+        height: 64rem;
+    }
+    .footer_height {
+        /*height: 1%;*/
+        height: 4rem;
+    }
+    .year_width {
+        width: 57rem;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    html {
+        font-size: 1.5rem;
+    }
+    .tab_switch, .tab_slider, .is-expanded {
+        display: none;
+    }
+    .site-logo img {
+        margin-top: 2rem;
+        max-height: 4rem;
+    }
+    .ban_text {
+        font-size: 2rem;
+        line-height: 3.5;
+    }
+    .shade_col {
+        font-size: 1.2rem;
+    }
+    .text_middle {
+        font-size: 1.1rem;
+    }
+    .header_height {
+        /*height: 9%;*/
+        height: 7rem;
+    }
+    .main_height {
+        /*height: 90%;*/
+        height: 64rem;
+    }
+    .footer_height {
+        /*height: 1%;*/
+        height: 4rem;
+    }
+    .year_width {
+        width: 80rem;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    html {
+        font-size: 2rem;
+    }
+    .tab_switch, .tab_slider, .is-expanded {
+        display: none;
+    }
+    .site-logo img {
+        margin-top: 2rem;
+        max-height: 4rem;
+    }
+    .ban_text {
+        font-size: 2rem;
+        line-height: 3.5;
+    }
+    .shade_col {
+        font-size: 1.5rem;
+    }
+    .text_middle {
+        font-size: 1.2rem;
+    }
+    .header_height {
+        /*height: 9%;*/
+        height: 7rem;
+    }
+    .main_height {
+        /*height: 89%;*/
+        height: 64rem;
+    }
+    .footer_height {
+        /*height: 2%;*/
+        height: 4rem;
+    }
+    .year_width {
+        width: 80rem;
+    }
+}
+

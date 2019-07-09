@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="front-end/index/downloading.css">
+    <link rel="stylesheet" href="front-end/index/home_layout.css">
+    <link rel="stylesheet" href="front-end/index/home_detail.css">
+    <link rel="stylesheet" href="front-end/index/map_content.css">
+    <link rel="stylesheet" href="front-end/index/radar_chart.css">
+    <link rel="stylesheet" href="front-end/index/switch.css">
+    <link rel="stylesheet" href="front-end/index/shade.css">
+    <link rel="stylesheet" href="front-end/index/years.css">
+    <link rel="stylesheet" href="front-end/index/responsive.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href='https://fonts.googleapis.com/css?family=Kanit:400' rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <title>TPMAP</title>
+</head>
+<script src="https://d3js.org/d3.v3.min.js"></script>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+<script src="https://d3js.org/topojson.v2.min.js"></script>
+<script src="https://unpkg.com/shpjs@latest/dist/shp.js"></script>
+<script src="savage.toggle-switch.min.js" type="text/javascript"></script>
+<script src="node_modules/easytimer.js/dist/easytimer.min.js"></script>
+<body>
+<div class="container-fluid">
+    <div id="downloading" class="p-0 m-0 downloading">
+        <div id="loader" class="loader"></div>
+    </div>
+    <div class="tab_switch mini-submenu" onclick="expanded()">
+        <i class="icon2 material-icons">menu</i>
+    </div>
+    <div class="px-5 py-4 is-expanded tab_slider">
+        <div class="tab_mobile">
+            <table>
+                <tr class="rowT">
+                    <td class="col_head">
+                        <p class="tab_header_text">มิติความยากจน</p>
+                    </td>
+                    <td class="col_head">
+                        <span class="pull-right" id="slide-submenu" onclick="hided()">
+                            <i class="icon3 glyphicon">&#xe251;</i>
+                        </span>
+                    </td>
+                </tr>
+            </table>
+            <table class="layerT">
+                <tr class="rowT">
+                    <td class="col1">ด้านสุุขภาพ</td>
+                    <td id="range1" class="col2"></td>
+                </tr>
+                <tr class="rowT">
+                    <td class="col1">ด้านความเป็นอยู่</td>
+                    <td id="range2" class="col2"></td>
+                </tr>
+                <tr class="rowT">
+                    <td class="col1">ด้านการศึกษา</td>
+                    <td id="range3" class="col2"></td>
+                </tr>
+                <tr class="rowT">
+                    <td class="col1">ด้านรายได้</td>
+                    <td id="range4" class="col2"></td>
+                </tr>
+                <tr class="rowT">
+                    <td class="col1">ด้านการเข้าถึงบริการรัฐ</td>
+                    <td id="range5" class="col2"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="row header_height">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 header">
+            <div class="home site-logo" onclick="reset()">
+                <img class="logo" src="https://www.tpmap.in.th/public/img/logo@2x.png">
+                <div class="ban-text ban_text">ระบบบริหารจัดการข้อมูลการพัฒนาคนแบบชี้เป้า (สำหรับท้องถิ่น)</div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 main_hide main main_height">
+            <div class="p-5 tab">
+                <p class="tab_header_text">มิติความยากจน</p>
+                <div style="overflow-x:auto;">
+                    <table class="layerT">
+                        <tr class="rowT">
+                            <td class="col1">ด้านสุุขภาพ</td>
+                            <td id="range6" class="col2"></td>
+                        </tr>
+                        <tr class="rowT">
+                            <td class="col1">ด้านความเป็นอยู่</td>
+                            <td id="range7" class="col2"></td>
+                        </tr>
+                        <tr class="rowT">
+                            <td class="col1">ด้านการศึกษา</td>
+                            <td id="range8" class="col2"></td>
+                        </tr>
+                        <tr class="rowT">
+                            <td class="col1">ด้านรายได้</td>
+                            <td id="range9" class="col2"></td>
+                        </tr>
+                        <tr class="rowT">
+                            <td class="col1">ด้านการเข้าถึงบริการรัฐ</td>
+                            <td id="range10" class="col2"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div id="the_map" class="col-12 col-sm-12 col-md-7 col-lg-5 col-xl-5 main main_height the_map">
+            <div class="previous"><i class="icon material-icons" onclick="undo()">&#xe166</i></div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-5 col-lg-4 col-xl-4 main main_height">
+            <div class="p-4 bar_content">
+                <div>
+                    <table class="layerT">
+                        <tr class="bar_row1">
+                            <td id="province-text" class="bar_col1">ประเทศไทย</td>
+                            <td id="district-text" class="bar_col2">อำเภอ</td>
+                            <td id="tumbon-text" class="bar_col3">ตำบล</td>
+                        </tr>
+                        <tr class="bar_row2">
+                            <td id="province-value" class="bar_col1">ชื่อจังหวัด</td>
+                            <td id="district-value" class="bar_col2">ชื่ออำเภอ</td>
+                            <td id="tumbon-value" class="bar_col3">ชื่อตำบล</td>
+                        </tr>
+                    </table>
+                    <table class="my-3 layerT">
+                        <tr class="bar_row3">
+                            <td id="rate-text" class="px-4 bar_col3">สัดส่วนคนจน (%)</td>
+                            <td id="poor-text" class="px-4 bar_col1">จำนวนคนจน</td>
+                        </tr>
+                        <tr class="bar_row4">
+                            <td id="rate-value" class="px-4 bar_col3">%</td>
+                            <td id="poor-value" class="px-4 bar_col1">คน</td>
+                        </tr>
+                    </table>
+                </div>
+                <svg id="svg-bar" class="svg-bar"></svg>
+                <button class="px-5 py-3 more-text" onclick="another_page()">รายละเอียด</button>
+            </div>
+            <div class="px-5 py-3 shade">
+                <table class="layerT">
+                    <tr class="rowT">
+                        <td class="shade_col">สัดส่วนคนจน/จำนวนคนจนเป้าหมาย</td>
+                        <td id="range0" class="shade_col_right"></td>
+                    </tr>
+                </table>
+                <table class="layerT">
+                    <tr class="rowT">
+                        <td id="shade-text" class="no-drop">จำนวนคนจน</td>
+                    </tr>
+                    <tr class="rowT">
+                        <td colspan="2">
+                            <svg id="svg-shading" class="svg-shading"></svg>
+                        </td>
+                    </tr>
+                    <tr class="rowT">
+                        <td id="min-shade-text" class="caption">น้อยที่สุด</td>
+                        <td id="max-shade-text" class="shade_col_right caption">มากที่สุด</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="row footer_height">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 footer">
+            <p class="copyright" style="display:inline"><i class="fa fa-copyright"></i> 2018 เนคเทค สวทช.</p>
+            <div style="overflow-x:auto;" class="year_width year_content">
+                <table class="layerT">
+                    <tr class="rowY">
+                        <td class="year_text">ปี</td>
+                        <td id="Y2555" class="year_text text_middle unrelease">2555</td>
+                        <td class="year_text">|</td>
+                        <td id="Y2556" class="year_text text_middle unrelease">2556</td>
+                        <td class="year_text">|</td>
+                        <td id="Y2557" class="year_text text_middle unrelease">2557</td>
+                        <td class="year_text">|</td>
+                        <td id="Y2558" class="year_text text_middle unrelease">2558</td>
+                        <td class="year_text">|</td>
+                        <td id="Y2559" class="year_text text_middle">2559</td>
+                        <td class="year_text">|</td>
+                        <td id="Y2560" class="year_text text_middle">2560</td>
+                        <td class="year_text">|</td>
+                        <td id="Y2561" class="year_text text_middle">2561</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="back-end/index/radarAPI.js"></script>
+<script src="back-end/index/class.js"></script>
+<script src="back-end/index/connect_each_html.js"></script>
+<script src="back-end/index/generated.js"></script>
+<script src="back-end/index/dynamic.js"></script>
+<script src="back-end/index/binding.js"></script>
+<script src="back-end/index/map.js"></script>
+<script src="back-end/index/bar_chart.js"></script>
+<script src="back-end/index/switch.js"></script>
+<script src="back-end/index/shade.js"></script>
+<script src="back-end/index/years.js"></script>
+<script src="back-end/index/installation.js"></script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+* {
+    font-family: "Kanit";
+    box-sizing: border-box;
+}
+.container-fluid {
+    height: 75rem;
+}
+.header {
+    background-color: #f9f9f9;
+    font-size: 1rem;
+    box-shadow: 4px 0 8px rgba(33, 33, 33, 0.2);
+}
+.home {
+    width: 96.5%;
+    margin: 0 auto;
+}
+.home:hover {
+    opacity: .6;
+    cursor: pointer;
+}
+.logo {
+    float: left;
+    max-width: 100%;
+}
+.ban-text {
+    color: #455396;
+    text-align: left;
+    padding-left: 1rem;
+    float: left;
+}
+/*
+.shape_name{
+    position: relative;
+    width: 99%;
+    height: 10%;
+    left: 1%;
+    border-bottom: 2px solid #e0e0e0;
+}
+*/
+.layerT {
+     width: 100%;
+}
+.bar_detail {
+
+}
+.svg-detail {
+    display: block;
+    margin: auto;
+}
+.line_legend{
+    display: block;
+    height: 1.4rem;
+    width: 2.5rem;
+}
+.span_legend1{
+    background: #400099;
+}
+.span_legend2{
+    background: #f87c03;
+}
+.span_legend3{
+    background: #00af41;
+}

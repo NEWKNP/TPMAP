@@ -1,0 +1,27 @@
+.row1 {
+    font-size: 1.7rem;
+}
+.row2 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+.col_center {
+    text-align: center;
+}
+.col_left {
+    font-size: 2.5rem;
+}
+.col_right {
+    font-size: 2rem;
+    text-align: end;
+}
+.row_left {
+    padding: 2rem 0;
+}
+p.position {
+    position: absolute;
+}
+p#detail-main-name {
+    color: #400099;
+    font-size: 4rem;
+}

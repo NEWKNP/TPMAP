@@ -1,0 +1,87 @@
+.tab_header_text {
+    color: #848484;
+    font-size: 2.5rem;
+}
+.tab_left {
+    float: left;
+}
+.is-expanded {
+    position: fixed;
+    display: none;
+    width: 35rem;
+    height: 27rem;
+    margin-top: 15rem;
+    left: 0;
+    background-color: white;
+    box-shadow: 0 0 5px grey;
+    z-index: 3;
+}
+.tab_row {
+    position: fixed;
+    z-index: 3;
+}
+.active {
+    width: 100%;
+    height: 4rem;
+}
+.mini-submenu{
+    position: fixed;
+    margin-top: 15rem;
+    left: 0;
+    width: 5rem;
+    height: 5rem;
+    background-color: white;
+    box-shadow: 0 0 5px grey;
+    z-index: 2;
+}
+.mini-submenu:hover{
+    cursor: pointer;
+}
+
+.mini-submenu .icon-bar {
+    border-radius: 1px;
+    display: block;
+    height: 2px;
+    width: 22px;
+    margin-top: 3px;
+}
+
+.mini-submenu .icon-bar {
+    background-color: #000;
+}
+
+#slide-submenu{
+    background: #848484;
+    width: 3.5rem;
+    height: 3.5rem;
+    display: inline-block;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+.icon3 {
+    font-size: 2.5rem;
+    padding: .4rem .8rem;
+}
+.tab_mobile {
+    width: 100%;
+}
+.switch {
+    margin-top: 9px;
+}
+.layerT {
+    width: 100%;
+}
+.rowT {
+
+}
+.col1 {
+    font-size: 1.5rem;
+    padding-top: 1rem;
+}
+.col2 {
+    float: right;
+    padding-top: 1rem;
+}
+.col_head {
+    width: 100%;
+}
