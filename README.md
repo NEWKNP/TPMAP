@@ -3,12 +3,12 @@
 > one project NECTEC responding
 
 ## Softwarre
- - **[Webstorm JetBrains](https://www.jetbrains.com/webstorm/)**
+ - [Webstorm JetBrains](https://www.jetbrains.com/webstorm/)
  - **[VS code](https://code.visualstudio.com/)**
  
 ## Programming skill require
- - traditiional Web language (HTML/CSS/JS)
- - web development learning recommend [click](https://www.w3schools.com/whatis/)
+ - traditional Web language (HTML/CSS/JS)
+ - web development learning recommend **[click](https://www.w3schools.com/whatis/)**
  - or another study reference. You can search in [google](https://www.google.com/)
  
 ## Library
