@@ -8,6 +8,8 @@
  
 ## Programming skill require
  - traditiional Web language (HTML/CSS/JS)
+ - web development learning recommend [click](https://www.w3schools.com/whatis/)
+ - or another study reference. You can search in [google](https://www.google.com/)
  
 ## Library
  - **[NodeJS](https://nodejs.org/en/)**
