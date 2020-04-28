@@ -2,7 +2,7 @@
 
 > one project NECTEC responding
 
-## Softwarre
+## Software
  - [Webstorm JetBrains](https://www.jetbrains.com/webstorm/)
  - **[VS code](https://code.visualstudio.com/)**
  
