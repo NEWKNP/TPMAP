@@ -23,3 +23,8 @@ ______________________________________________________
 *Year 2559, 2560 is not available for license task.
 
 full version of TPMAP and it is available now.
+
+______________________________________________________
+
+![Directory Structure](/asset/1.png "Home page")
+![Directory Structure](/asset/2.png "รายละเอียด page")
